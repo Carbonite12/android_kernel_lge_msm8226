@@ -124,7 +124,7 @@ static u64 boostpulse_endtime;
  * minimum before wakeup to reduce speed, or -1 if unnecessary.
  */
 #define DEFAULT_TIMER_SLACK (DEFAULT_TIMER_RATE)
-static int default_timer_slack_val[] = { DEFAULT_TIMER_SLACK };
+static int timer_slack_val = DEFAULT_TIMER_SLACK;
 
 static bool io_is_busy = true;
 
