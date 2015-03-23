@@ -40,7 +40,6 @@
 			<26 512 2128000 4256000>, <89 604 0 6400000>,
 			<26 512 2400000 4400000>, <89 604 0 6600000>;
 
-
 		/* GDSC oxili regulators */
 		vddcx-supply = "\0";
 		vdd-supply = <&gdsc_oxili_cx>;
@@ -48,6 +47,9 @@
 
 		/* IOMMU Data */
 		iommu = <&kgsl_iommu>;
+
+		/* CPU latency parameter */
+		qcom,pm-qos-latency = <701>;
 
 		/* Power levels */
 		qcom,gpu-pwrlevels {
